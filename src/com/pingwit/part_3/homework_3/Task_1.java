@@ -9,7 +9,7 @@ public class Task_1 {
         System.out.println("Enter the amount in dollars");
         int amountInDollars = scanner.nextInt();
         int currencyld = scanner.nextInt();
-        double exchangeRateUSD = 0.5;
+        double exchangeRateUSD =0.5;
 
         switch (currencyld) {
             case 1:
