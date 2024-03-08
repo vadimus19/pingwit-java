@@ -6,7 +6,7 @@ public class Task_5 {
 
         for (int inches = 1; inches <= 20; inches++) {
             double centimeters = inches * 2.54;
-            System.out.println(inches + "\t" + centimeters);
+            System.out.println(inches + " " + centimeters);
         }
     }
 }
