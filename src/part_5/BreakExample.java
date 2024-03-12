@@ -1,4 +1,4 @@
-package com.pingwit;
+package part_5;
 
 public class BreakExample {
     public static void main(String[] args) {
