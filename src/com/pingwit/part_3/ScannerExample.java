@@ -10,7 +10,7 @@ public class ScannerExample {
 
         System.out.println("How old r u?");
         int age = scanner.nextInt();
-        System.out.println("Your name" + name );
+        System.out.println("Your name" + name);
         System.out.println("Your age" + age);
 
 

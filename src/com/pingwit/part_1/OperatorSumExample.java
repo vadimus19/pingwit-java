@@ -28,8 +28,5 @@ public class OperatorSumExample {
         long results = num_5 + longNum;
 
 
-
-
-
     }
 }

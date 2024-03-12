@@ -10,8 +10,8 @@ public class WhileExample {
             }
             i++;
 
-            }
+        }
         System.out.println("Happy end");
 
-        }
-      }
+    }
+}

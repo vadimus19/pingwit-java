@@ -12,7 +12,7 @@ public class TypeCastingExample {
 
         // повышение
         int highInt = 400;
-        byte highByte =(byte) highInt;
+        byte highByte = (byte) highInt;
         System.out.println(highByte);
 
         double highDouble = 100.9;
