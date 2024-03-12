@@ -1,6 +1,6 @@
 package com.pingwit.part_4.homework;
 
-public class Task_3 {
+public class CalculationNum {
     public static void main(String[] args) {
         int n = 256;
         int sum = 0;

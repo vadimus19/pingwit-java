@@ -1,6 +1,6 @@
 package com.pingwit.part_1.homework;
 
-public class task_5 {
+public class SumNum {
     public static void main(String[] args) {
      int x = 91;
      int sum = 3;

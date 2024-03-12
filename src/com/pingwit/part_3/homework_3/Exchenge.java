@@ -2,7 +2,7 @@ package com.pingwit.part_3.homework_3;
 
 import java.util.Scanner;
 
-public class Task_1 {
+public class Exchenge {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

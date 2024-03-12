@@ -1,6 +1,6 @@
 package com.pingwit.part_4.homework;
 
-public class Task_1 {
+public class Sportsman {
     public static void main(String[] args) {
         double distance = 10;
         double procent = 10;
