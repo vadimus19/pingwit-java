@@ -16,11 +16,8 @@ public class ArrayExample {
         for (int i = 0; i < initArray.length; i++) {
             System.out.println(initArray[i]);
         }
-        System.out.println(Arrays.toString(initArray));
-        initArray = new Integer[]{0, 1};
-        initArray[0] = 33;
-        System.out.println(Arrays.toString(initArray));
+
     }
 
-   }
+}
 
