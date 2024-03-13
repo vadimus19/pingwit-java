@@ -1,5 +1,5 @@
 package com.pingwit.part_4.homework;
-
+// хорошо справился
 public class Triangle {
     public static void main(String[] args) {
         int n = 5;

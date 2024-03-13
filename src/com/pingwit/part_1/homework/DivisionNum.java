@@ -6,6 +6,6 @@ public class DivisionNum {
       int num_2 = 4;
       int results = num_1 / num_2;
       System.out.println(results);
-
+// эта строка лишняя, удали
     }
 }
