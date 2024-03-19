@@ -1,6 +1,6 @@
-package part_5;
+package com.pingwit.part_5;
 
-public class DebugExample {
+public class RenameExample {
     public static void main(String[] args) {
         int sum = 100;
         for (int i = 0; i < 100; i++) {

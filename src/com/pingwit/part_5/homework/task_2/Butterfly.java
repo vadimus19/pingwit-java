@@ -1,4 +1,4 @@
-package part_5.homework.task_2;
+package com.pingwit.part_5.homework.task_2;
 
 public class Butterfly {
     public static void main(String[] args) {

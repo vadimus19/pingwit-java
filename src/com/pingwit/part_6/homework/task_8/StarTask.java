@@ -1,4 +1,4 @@
-package part_6.homework;
+package com.pingwit.part_6.homework.task_8;
 
 public class StarTask {
     public static void main(String[] args) {

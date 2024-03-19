@@ -1,4 +1,4 @@
-package part_5.homework;
+package com.pingwit.part_5.homework.task_1;
 
 public class DebugEvenNum {
     public static void main(String[] args) {

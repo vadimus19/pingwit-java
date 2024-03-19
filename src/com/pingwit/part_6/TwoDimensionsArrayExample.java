@@ -1,4 +1,4 @@
-package part_6;
+package com.pingwit.part_6;
 
 import java.util.Arrays;
 
