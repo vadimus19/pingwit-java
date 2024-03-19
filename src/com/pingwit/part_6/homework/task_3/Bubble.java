@@ -2,6 +2,7 @@ package com.pingwit.part_6.homework.task_3;
 
 import java.util.Arrays;
 
+//отформатируй код
 public class Bubble {
     public static void main(String[] args) {
         int[] numbers = {7, 2, 5, 1, 3};
