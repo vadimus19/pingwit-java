@@ -1,4 +1,4 @@
-package com.pingwit.part_6.homework.task_7;
+package com.pingwit.part_6.homework.task_4;
 
 public class MultiplicationTable {
     public static void main(String[] args) {  int size = 10;

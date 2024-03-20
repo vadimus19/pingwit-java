@@ -1,4 +1,4 @@
-package com.pingwit.part_6.homework.task_1;
+package com.pingwit.part_6.homework.task_2;
 
 public class ArithmeticMid {
     public static void main(String[] args) {

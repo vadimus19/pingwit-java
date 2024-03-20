@@ -1,4 +1,4 @@
-package com.pingwit.part_6.homework.task_4;
+package com.pingwit.part_6.homework.task_3;
 
 public class ChangeZero {
     public static void main(String[] args) {

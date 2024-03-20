@@ -1,4 +1,4 @@
-package com.pingwit.part_6.homework.task_3;
+package com.pingwit.part_6.homework.task_7;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ public class Bubble {
         int[] numbers = {7, 2, 5, 1, 3};
 
         for (int i = 1; i < numbers.length; i++) {
-            for (int j = 1; j < numbers.length ; j++) {
+            for (int j = 1; j < numbers.length; j++) {
                 int current = numbers[j];
                 int previous = numbers[j - 1];
                 if (previous > current) {

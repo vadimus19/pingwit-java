@@ -3,9 +3,8 @@ package part_7;
 public class StudentInitExample {
     static String staticField = "some value";
     int counter;
+
     public static void main(String[] args) {
-
-
 
 
         Student student = new Student();
@@ -29,7 +28,7 @@ public class StudentInitExample {
         System.out.println(randomStudent.massege);
         randomStudent.massege = "Random student massege";
         System.out.println(student.massege);
-        System.out .println(Student.massege);
+        System.out.println(Student.massege);
 
         System.out.println("staticField");
         StudentInitExample studentInitExample = new StudentInitExample();
