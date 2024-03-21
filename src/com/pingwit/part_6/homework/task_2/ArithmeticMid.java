@@ -14,7 +14,7 @@ public class ArithmeticMid {
 
     public static double calculateAverage(int[] array) {
 // эта строка лишняя
-        if (array == null || array.length == 0) {
+        if (array == null || array.length == 0) { // хорошая проверка, но тогда лучше заменить возвращаемый тип на Double и внутри if вернуть null, чтобы явно в результате указать что массив был пустой
             return 0;
 // эта строка лишняя
         }
@@ -26,6 +26,6 @@ public class ArithmeticMid {
         }
 // эта строка лишняя
 
-        return (double) sum / array.length;
+        return (double) sum / array.length; // опционально: чтобы избежать класс каста, можно сделать входной массив double[]
     }
 }

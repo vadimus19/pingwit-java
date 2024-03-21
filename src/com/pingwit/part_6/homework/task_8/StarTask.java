@@ -22,6 +22,6 @@ public class StarTask {
         }
 
         System.out.println("Max: " + maxLength);
-        System.out.println("Start index : " + (maxStartIndex + 1) + "th index.");
+        System.out.println("Start index : " + (maxStartIndex + 1) + "th index."); // а зачем maxStartIndex + 1, индексы начинаются с 0, а добавляя +1 у тебя получается неверный результат
     }
 }

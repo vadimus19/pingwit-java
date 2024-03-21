@@ -1,5 +1,6 @@
 package com.pingwit.part_6.homework.task_3;
 
+// отформатируй код
 public class ChangeZero {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -10,7 +11,7 @@ public class ChangeZero {
             }
         }
 
-
+// лишняя строка, удали
         System.out.print("Array change: ");
         for (int num : array) {
             System.out.print(num + " ");
