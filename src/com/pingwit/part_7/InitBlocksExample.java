@@ -1,4 +1,4 @@
-package part_7;
+package com.pingwit.part_7;
 
 public class InitBlocksExample {
     public static void main(String[] args) {
