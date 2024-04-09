@@ -9,7 +9,7 @@ public class CarMarka {
         cars[2] = new Car("Audi", "A8", 4);
 
         for (Car car : cars) {
-            if (car.getMarka().equals("Audi")) {
+            if (car.getMarka() == ("Audi")) {
                 System.out.println("Opening doors for Audi " + car.getModel() + ":");
                 for (int i = 1; i <= car.getNumDoors(); i++) {
                     System.out.println("Door " + i + " is open");
