@@ -1,9 +1,15 @@
 package homework.task_1;
 
 public class Car {
-    String model = model;
-    String marka = marka;
-    int numDoors = numDoors;
+    private String model;
+    private String marka;
+    private int numDoors;
+
+    public Car(String marka, String model, int numDoors) {
+        this.marka = marka;
+        this.model = model;
+        this.numDoors = numDoors;
+    }
 
     public String getModel() {
         return model;
