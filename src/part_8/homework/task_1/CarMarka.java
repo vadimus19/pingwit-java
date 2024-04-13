@@ -1,4 +1,4 @@
-package homework.task_1;
+package part_8.homework.task_1;
 
 public class CarMarka {
     public static void main(String[] args) {
