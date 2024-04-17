@@ -1,4 +1,4 @@
-package part_8.homework.task_1;
+package com.pingwit.part_8.homework.task_1;
 
 public class Car {
     private String model;

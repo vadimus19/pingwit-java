@@ -9,15 +9,15 @@ public class HarvestStatisticService {
             Harvest currentHarvest = harvests[i];
 
             for (int j = 0; j < statistics.length; j++) {
-                HarvestStatistic harvestStatistic = statistics[j];
+                HarvestStatistic harvestStatistics = statistics[j];
 
-                if (harvestStatistic == null) {
+                if (harvestStatistics == null) {
                     statistics[j] = new HarvestStatistic(currentHarvest.getPlant(), currentHarvest.getWeight());
                     break;
                 }
-                if (harvestStatistic != null && harvestStatistic.getPlant().equals(currentHarvest.getPlant())) {
-                    BigDecimal totalWeight = harvestStatistic.getTotalWeight().add(currentHarvest.getWeight());
-                    harvestStatistic.setTotalWeight(totalWeight);
+                if (harvestStatistics != null && harvestStatistics.getPlant().equals(currentHarvest.getPlant())) {
+                    BigDecimal totalWeight = harvestStatistics.getTotalWeight().add(currentHarvest.getWeight());
+                    harvestStatistics.setTotalWeight(totalWeight);
                     break;
                 }
             }

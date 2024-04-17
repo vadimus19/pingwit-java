@@ -19,7 +19,9 @@ public class HarvestStatistic {
         return totalWeight;
     }
 
-    public void setTotalWeight(BigDecimal totalWeight)
+    public void setTotalWeight(BigDecimal totalWeight) {
+
+    }
 
     @Override
     public String toString() {
