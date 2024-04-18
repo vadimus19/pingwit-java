@@ -1,4 +1,7 @@
-package task_2;
+package com.pingwit.part_8.homework.task2;
+
+import com.pingwit.part_8.homework.task2.Harvest;
+import com.pingwit.part_8.homework.task2.HarvestStatistic;
 
 import java.math.BigDecimal;
 

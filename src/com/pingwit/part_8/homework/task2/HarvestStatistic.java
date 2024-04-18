@@ -1,4 +1,4 @@
-package task_2;
+package com.pingwit.part_8.homework.task2;
 
 import java.math.BigDecimal;
 
