@@ -3,10 +3,11 @@ package com.pingwit.part_9.homework.task_2;
 public class PersonMain {
     public static void main(String[] args) {
         Person[] people = {
-                new Person("Савелий", "Иванов", 18, "мужской", "single"),
-                new Person("Виолетта", "Петрова", 17, "женский", "married"),
-                new Person("Александр", "Сидоров", 23, "мужской", "single"),
-                new Person("Елена", "Смирнова", 14, "женский", "single")
+
+                new Person("Савелий", "Иванов", 18, Gender.MALE, MaritalStatus.SINGLE),
+                new Person("Виолетта", "Петрова", 17, Gender.FEMALE, MaritalStatus.MARRIED),
+                new Person("Александр", "Сидоров", 23, Gender.MALE, MaritalStatus.SINGLE),
+                new Person("Елена", "Смирнова", 14, Gender.FEMALE, MaritalStatus.SINGLE)
         };
 
         ClientDataProcessor processor = new ClientDataProcessor();
@@ -15,4 +16,4 @@ public class PersonMain {
             processor.processPerson(person);
         }
     }
-}
+    }
