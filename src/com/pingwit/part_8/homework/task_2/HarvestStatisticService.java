@@ -15,7 +15,7 @@ public class HarvestStatisticService {
                     statistics[j] = new HarvestStatistic(currentHarvest.getPlant(), currentHarvest.getWeight());
                     break;
                 }
-                if (harvestStatistics != null && harvestStatistics.getPlant().equals(currentHarvest.getPlant())) {
+                if (harvestStatistics != null && harvestStatistics.getPlant().equals(currentHarvest.getPlant())) { // harvestStatistics != null && - эту часть можно удалить, т.к. в 14 строке у нас проверка на null и в этот if мы зайдем только если harvestStatistics != null
                     BigDecimal totalWeight = harvestStatistics.getTotalWeight().add(currentHarvest.getWeight());
                     harvestStatistics.setTotalWeight(totalWeight);
                     break;

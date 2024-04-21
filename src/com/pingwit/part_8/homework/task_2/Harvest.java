@@ -13,7 +13,7 @@ public class Harvest {
         this.field = field;
         this.plant = plant;
         this.weight = weight;
-
+// лишняя строка, удали
     }
 
     public Long getId() {
@@ -48,7 +48,7 @@ public class Harvest {
         this.weight = weight;
     }
 
-
+// лишняя строка, удали
     @Override
     public String toString() {
         return "Harvest{" +

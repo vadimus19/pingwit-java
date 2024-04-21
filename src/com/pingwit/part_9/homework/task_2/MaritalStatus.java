@@ -2,6 +2,6 @@ package com.pingwit.part_9.homework.task_2;
 
 public enum MaritalStatus  {
     SINGLE,
-    MARRIED
-
+    MARRIED// ; добавь
+// лишняя строка, удали
 }

@@ -2,8 +2,8 @@ package com.pingwit.part_8.homework.task_1;
 
 public class Car {
     private String model;
-    private String marka;
-    private int numDoors;
+    private String marka; // -> producer
+    private int numDoors; // -> doors или doorsNumber
 
     public Car(String marka, String model, int numDoors) {
         this.marka = marka;

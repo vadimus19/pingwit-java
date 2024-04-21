@@ -1,7 +1,7 @@
 package com.pingwit.part_9.homework.task_2;
 
 public class Person {
-
+// все поля класс сделай private
     String firstName;
     String lastName;
     int age;
@@ -28,7 +28,7 @@ public class Person {
 
     public Gender getGender() {
         return gender;
-    }
+    }//добавь абзац
     public MaritalStatus getMaritalStatus() {
         return maritalStatus;
     }
