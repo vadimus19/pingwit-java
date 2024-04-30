@@ -4,9 +4,9 @@ import java.util.concurrent.Callable;
 
 public class HashCodeEqualsExample {
     public static void main(String[] args) {
-        Cat murzik = new Cat ("Siam","black");
-        Cat sharik = new Cat ("Siam","black");
-        Cat white = new Cat("pers" ,"white");
+        Cat murzik = new Cat("Siam", "black");
+        Cat sharik = new Cat("Siam", "black");
+        Cat white = new Cat("pers", "white");
 
         Cat murzikClone = murzik;
 

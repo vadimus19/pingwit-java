@@ -16,4 +16,4 @@ public class PersonMain {
             processor.processPerson(person);
         }
     }
-    }
+}
