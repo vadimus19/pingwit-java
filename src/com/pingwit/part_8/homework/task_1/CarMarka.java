@@ -9,7 +9,7 @@ public class CarMarka {
         cars[2] = new Car("Audi", "A8", 4);
 
         for (Car car : cars) {
-            if (car.getMarka() == ("Audi")) {
+            if (car.getMarka() == ("Audi")) { // == используем только с примитивами и enum, во всех остальных случаях equals, "Audi" лучше вынести в переменную
                 System.out.println("Opening doors for Audi " + car.getModel() + ":");
                 for (int i = 1; i <= car.getNumDoors(); i++) {
                     System.out.println("Door " + i + " is open");

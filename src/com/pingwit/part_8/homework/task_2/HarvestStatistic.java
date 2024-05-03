@@ -20,7 +20,7 @@ public class HarvestStatistic {
     }
 
     public void setTotalWeight(BigDecimal totalWeight) {
-
+// где-то здесь должен быть код метода, пока этот метод ничего не делает
     }
 
     @Override
@@ -31,6 +31,6 @@ public class HarvestStatistic {
                 '}';
     }
 
-
+// лишняя строка, удали
 }
 

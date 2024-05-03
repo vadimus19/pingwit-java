@@ -8,6 +8,7 @@ public class Person {
     Gender gender;
     MaritalStatus maritalStatus;
 
+    // Конструктор
     public Person(String firstName, String lastName, int age, Gender gender, MaritalStatus maritalStatus) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,6 +17,7 @@ public class Person {
         this.maritalStatus = maritalStatus;
     }
 
+    // Геттеры
     public int getAge() {
         return age;
     }
@@ -27,7 +29,6 @@ public class Person {
     public Gender getGender() {
         return gender;
     }
-
     public MaritalStatus getMaritalStatus() {
         return maritalStatus;
     }
