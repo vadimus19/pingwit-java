@@ -1,6 +1,7 @@
 package com.pingwit.part_11.homework.task_2;
 
-public class Monkey {   String name;
+public class Monkey {
+    String name;
 
     public Monkey(String name) {
         this.name = name;
@@ -11,9 +12,9 @@ public class Monkey {   String name;
 
         if (branch != null) {
             if (branch.fruit != null) {
-                if (this.name.equals("BananaMonkey") && branch.fruit.type.equals("бананы")) {
+                if (this.name.equals("BananaMonkey") && branch.fruit.type.equals("bananas")) {
                     count += branch.fruitCount;
-                } else if (this.name.equals("CoconutMonkey") && branch.fruit.type.equals("кокосы")) {
+                } else if (this.name.equals("CoconutMonkey") && branch.fruit.type.equals("coconnuts")) {
                     count += branch.fruitCount;
                 } else if (this.name.equals("SmartMonkey")) {
                     count += branch.fruitCount;

@@ -1,15 +1,22 @@
 package com.pingwit.part_11.homework.task_1;
 
 public class FerryPermission {
-    public static boolean checkFerryAccess(Transport[] transports) {
+    private static final int MAX_PASSENGERS = 49;
+    private static final int MAX_WEIGHT = 14999;
+
+    public boolean checkFerryAccess(Transport[] transports) {
         int totalPassengers = 0;
         double totalWeight = 0;
 
         for (Transport transport : transports) {
-            totalPassengers += transport.passengers;
-            totalWeight += transport.weight;
+            totalPassengers += transport.getPassengers();
+            totalWeight += transport.getWeight();
         }
 
-        return totalPassengers <= 50 && totalWeight <= 15_000;
+        return totalPassengers <= MAX_PASSENGERS && totalWeight <= MAX_WEIGHT;
+    }
+
+    public static boolean get(Transport[] transports) {
+        return false;
     }
 }
