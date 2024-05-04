@@ -1,6 +1,6 @@
 package com.pingwit.part_12;
 
-public class PrivateClub {
+public class PrivateClub extends RegularClub {
     public static final Long SERIAL_VERSION = 666l;
     private final String clubName;
     private final int members;

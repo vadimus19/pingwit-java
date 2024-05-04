@@ -17,6 +17,7 @@ public class FerryPermission {
     }
 
     public static boolean get(Transport[] transports) {
+
         return false;
     }
 }
