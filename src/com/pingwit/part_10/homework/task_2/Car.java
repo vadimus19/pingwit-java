@@ -3,7 +3,7 @@ package com.pingwit.part_10.homework.task_2;
 public class Car implements Vehicle {
     private Engine engine;
     private Gearbox gearbox;
-    private boolean isRunning;
+    private boolean isRunning; // это поле можно удалить и у engine спрашивать запущен ли двигатель -> engine.isRunning()
 
     public Car() {
         engine = new Engine();
@@ -20,6 +20,15 @@ public class Car implements Vehicle {
         } else {
             System.out.println("Engine is already running.");
         }
+
+        /* лучше избегать инвертирование значения, в твоем случае можно просто поменять местами
+        if (engine.isRunning()) {
+            System.out.println("Engine is already running.");
+        } else {
+            engine.start();
+            isRunning = true;
+            System.out.println("Engine started.");
+        }*/
     }
 
     @Override
@@ -56,7 +65,7 @@ public class Car implements Vehicle {
     @Override
     public void accelerate() {
         if (isRunning) {
-            int speed = gearbox.getCurrentGear() * 20;
+            int speed = gearbox.getCurrentGear() * 20; // магическое число, но ты уже знаешь что с этим делать
             System.out.println("Current speed: " + speed + " km/h");
         } else {
             System.out.println("Cannot accelerate, engine is not running.");
