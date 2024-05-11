@@ -5,7 +5,7 @@ public class Main {
         Fruit banana = new Fruit("bananas");
         Fruit coconut = new Fruit("coconuts");
 
-        Branch[] branchesWithBananas = {new Branch(5, banana, null), new Branch(3, banana, null)};
+        Branch[] branchesWithBananas = {new Branch(5, banana, null), new Branch(3, banana, new Branch[]{new Branch(10, banana, null)})};
         Branch[] branchesWithCoconuts = {new Branch(2, coconut, null), new Branch(4, coconut, null)};
 
         Branch bananaTree = new Branch(0, null, branchesWithBananas);
@@ -18,7 +18,7 @@ public class Main {
         Monkey coconutMonkey = new Monkey("CoconutMonkey");
         Monkey smartMonkey = new Monkey("SmartMonkey");
 
-        System.out.println("Quantity bananas  , counted as a monkey: " + MonkeyManager.countFruitsOnTree(treeWithBananas, bananaMonkey));
+        System.out.println("Quantity bananas  , counted as a monkey: " + MonkeyManager.countFruitsOnTree(treeWithBananas, bananaMonkey)); // перед "," лишние пробелы
         System.out.println("Quantity coconuts, counted as a monkey: " + MonkeyManager.countFruitsOnTree(treeWithCoconuts, coconutMonkey));
         System.out.println("Quantity fruits, counted as a smart monkey: " + MonkeyManager.countFruitsOnTree(treeWithBananas, smartMonkey));
     }

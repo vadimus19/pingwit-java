@@ -11,7 +11,7 @@ public class Main {
 
          FerryTicket ferryTicket = new FerryTicket();
 
-        if (FerryPermission.get(transports)) {
+        if (FerryPermission.get(transports)) { // просто на информации: чтобы вызвать нестатические метод, необходимо создать экземпляр класса, например, как в строке 12
             System.out.println("The ferry is admitted.");
             ferryTicket.calculateFerryFare(transports);
         } else {
