@@ -1,6 +1,6 @@
 package com.pingwit.part_12.homework.task_1;
 
-import com.pingwit.part_12.homework.task_1.SecretLocker;
+import com.pingwit.part_12.homework.task_1.SecretLocker; // удали импорт
 
 import java.lang.reflect.Field;
 
