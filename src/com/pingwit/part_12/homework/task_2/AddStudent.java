@@ -23,14 +23,12 @@ public class AddStudent {
         System.out.println("----Students after adding new student:");
         printStudents(university.getFreshmen());
     }
-
     public static Student[] addStudent(Student[] students, Student newStudent) {
         Student[] updatedStudents = new Student[students.length + 1];
         System.arraycopy(students, 0, updatedStudents, 0, students.length);
         updatedStudents[students.length] = newStudent;
         return updatedStudents;
     }
-
     public static void printStudents(Student[] students) {
         for (Student student : students) {
             System.out.println("Name: " + student.getFirstName() + ", Surname: " + student.getLastName() + ", Age: " + student.getAge());

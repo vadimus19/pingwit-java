@@ -12,4 +12,4 @@ public class SecretLocker {
     public String getPasscode() {
         return passcode;
     }
-    }
+}

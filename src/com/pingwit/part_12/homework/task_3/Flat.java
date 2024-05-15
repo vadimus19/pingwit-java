@@ -10,7 +10,6 @@ public class Flat {
             System.out.println("Wrong password.The door is close");
         }
     }
-
     void openDoor() {
 
         System.out.println("<<The door is open!Do not forget your keys anymore!!!>>");
