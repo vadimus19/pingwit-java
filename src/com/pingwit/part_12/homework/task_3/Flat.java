@@ -15,4 +15,7 @@ public class Flat {
 
         System.out.println("<<The door is open!Do not forget your keys anymore!!!>>");
     }
+
+
 }
+

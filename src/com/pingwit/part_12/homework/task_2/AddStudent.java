@@ -1,8 +1,7 @@
 package com.pingwit.part_12.homework.task_2;
 
 // если класс, находится в одном пакете с текущим классом, то импорт не нужен
-import com.pingwit.part_12.homework.task_2.Student; //лишний импорт, удали
-import com.pingwit.part_12.homework.task_2.UniversityStudents; //лишний импорт, удали
+
 
 public class AddStudent {
     public static void main(String[] args) {
@@ -32,7 +31,7 @@ public class AddStudent {
     }
     public static void printStudents(Student[] students) {
         for (Student student : students) {
-            System.out.println("Name: " + student.getFirstName() + ", Surname: " + student.getLastName() + ", Age: " + student.getAge()); // добавь метод toString() классу Student и тогда System.out.println(student)
+            System.out.println(student); // добавь метод toString() классу Student и тогда System.out.println(student)
         }
     }
 }
