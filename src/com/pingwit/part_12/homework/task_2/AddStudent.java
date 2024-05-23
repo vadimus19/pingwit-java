@@ -1,7 +1,5 @@
 package com.pingwit.part_12.homework.task_2;
 
-// если класс, находится в одном пакете с текущим классом, то импорт не нужен
-
 
 public class AddStudent {
     public static void main(String[] args) {
