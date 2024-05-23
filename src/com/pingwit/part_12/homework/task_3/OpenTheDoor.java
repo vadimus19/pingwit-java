@@ -1,15 +1,26 @@
 package com.pingwit.part_12.homework.task_3;
 
-public class OpenTheDoor extends Flat {
-    private OpenTheDoor() {
-    }
+import java.lang.reflect.Method;
 
-    public static void main(String[] args) {
+
+public class OpenTheDoor {
+    public static void main(String[] args) throws Exception {
         Flat myFlat = new Flat();
-        myFlat.openDoor();
-        ; // когда сделаешь метод openDoor() приватным, код перестанет компилироваться
-    }
 
+        Class<?> flatClass = myFlat.getClass();
+
+        Method openDoorMethod = flatClass.getDeclaredMethod("openDoor");
+
+        openDoorMethod.setAccessible(true);
+
+        System.out.println("Door opened without passcode." + openDoorMethod);
+        ;
+    }
 
 }
+
+
+
+
+
 
