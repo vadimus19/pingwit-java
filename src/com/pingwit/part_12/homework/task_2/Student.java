@@ -11,7 +11,7 @@ public class Student {
         this.age = age;
     }
 
-    public static Student createStudent(String firstName, String lastName, int age) {
+    public static Student createStudent(String firstName, String lastName, int age) { // обошел красиво, но задача была вызвать конструктор через рефлексию, поэтому этот метод удаляй
         return new Student(firstName, lastName, age);
     }
 

@@ -14,7 +14,7 @@ public class OpenTheDoor {
         openDoorMethod.setAccessible(true);
 
         System.out.println("Door opened without passcode." + openDoorMethod);
-        ;
+        ; // лишняя
     }
 
 }
