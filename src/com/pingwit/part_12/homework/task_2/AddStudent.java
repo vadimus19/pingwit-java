@@ -24,7 +24,7 @@ public class AddStudent {
     public static Student[] addStudent(Student[] students, Student newStudent) {
         Student[] updatedStudents = new Student[students.length + 1];
         System.arraycopy(students, 0, updatedStudents, 0, students.length);
-        updatedStudents[students.length] = newStudent; // лучше updatedStudents.length-1, так безопаснее
+        updatedStudents[students.length -1] = newStudent; // лучше updatedStudents.length-1, так безопаснее
         return updatedStudents;
     }
     public static void printStudents(Student[] students) {
