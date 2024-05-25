@@ -1,6 +1,6 @@
 package com.pingwit.part_12.homework.task_2;
 
-
+// отформатируй код
 public class AddStudent {
     public static void main(String[] args) {
 
