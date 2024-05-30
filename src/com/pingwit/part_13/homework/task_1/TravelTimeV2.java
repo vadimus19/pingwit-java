@@ -1,6 +1,6 @@
 package com.pingwit.part_13.homework.task_1;
 
-import java.util.Scanner;
+import java.util.Scanner; // удали ненужный импорт
 
 public class TravelTimeV2 {
     public static void main(String[] args) {

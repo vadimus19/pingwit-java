@@ -5,7 +5,7 @@ public class ReplacePoint {
         String originalString = "Green. red. blue. yellow";
         String replacedString = originalString.replace('.', ',');
 
-        System.out.println("Current string:" + originalString);
+        System.out.println("Current string:" + originalString); // После string: добавь пробел, чтобы одинаково красиво печаталось
         System.out.println("The string after change: " + replacedString);
     }
 }

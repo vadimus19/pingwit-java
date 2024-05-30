@@ -5,9 +5,9 @@ public class StringsLongerThanFive {
         String[] strings = {"apple", "banana", "orange", "grape", "pineapple"};
 
         for (String str : strings) {
-
+// лишняя строка, удали
             if (str.length() > 5) {
-
+// лишняя строка, удали
                 System.out.println(str);
             }
         }
