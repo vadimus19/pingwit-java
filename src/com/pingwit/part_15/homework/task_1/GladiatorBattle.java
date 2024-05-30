@@ -24,8 +24,6 @@ public class GladiatorBattle {
         int bound = 4;
         Random random = new Random();
 
-
-
         while (playerMissCount < 4 && opponentMissCount < 4) {//magic number
 
             int playerAttack;
@@ -36,8 +34,7 @@ public class GladiatorBattle {
                 System.out.println("3 - hit in the legs");
                 playerAttack = scanner.nextInt();
 
-
-                if (playerAttack < 1  || playerAttack > bit) {// magic number
+                if (playerAttack < 1 || playerAttack > bit) {// magic number
                     throw new BattleException("Wrong action. Try again.");
                 }
 
