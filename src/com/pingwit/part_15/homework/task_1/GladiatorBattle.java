@@ -24,15 +24,15 @@ public class GladiatorBattle {
         int bound = 4;
         Random random = new Random();
 
-        while (playerMissCount < 4 && opponentMissCount < 4) {//magic number
+        while (playerMissCount < 4 && opponentMissCount < 4) {//magic number - магическое число еще не поправил
 
-            int playerAttack;
+            int playerAttack; // ты не используешь переменную playerAttack за пределами блока try, поэтому не имеет смысла ее здесь создавать
             try {
                 System.out.println("Select an action:");
                 System.out.println("1 - hit in the head");
                 System.out.println("2 - hit to the body");
                 System.out.println("3 - hit in the legs");
-                playerAttack = scanner.nextInt();
+                playerAttack = scanner.nextInt(); //  playerAttack = scanner.nextInt(); -> int playerAttack = scanner.nextInt();
 
                 if (playerAttack < 1 || playerAttack > bit) {// magic number
                     throw new BattleException("Wrong action. Try again.");
@@ -43,7 +43,7 @@ public class GladiatorBattle {
                 int opponentAttack = random.nextInt(bound);
                 if (playerAttack != opponentBlock) {
                     opponentMissCount++;
-                    System.out.println("Miss! " + opponentName + " attacking " + opponentAttack);
+                    System.out.println("Miss! " + opponentName + " attacking " + opponentAttack); // не очень понял почему этот вывод на консоль ты решил здесь сделать. Получается я заранее вижу как будет атаковать соперник и могу выбрать правильный блок
                 } else {
                     System.out.println("block! " + opponentName + " try to attacked, you made a block!");
                 }
