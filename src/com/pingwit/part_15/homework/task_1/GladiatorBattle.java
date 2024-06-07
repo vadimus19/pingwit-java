@@ -9,14 +9,14 @@ public class GladiatorBattle {
     private static final int BLOCKS = 3;
 
     public static void main(String[] args) {
+        Random random = new Random();
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your name: ");
         String playerName = scanner.nextLine();
 
         String[] opponents = {"Maximus", "Achilles", "Spartacus", "Vadimus Velikus"};
-        String opponentName = opponents[(int) (Math.random() * opponents.length)];
-
+        String opponentName = opponents[random.nextInt(opponents.length)];
 
         System.out.println("Battle " + playerName + " vs " + opponentName);
         System.out.println("Are you READYYYYY? (Press Enter)");
@@ -24,7 +24,6 @@ public class GladiatorBattle {
 
         int playerMissCount = 0;
         int opponentMissCount = 0;
-        Random random = new Random();
 
         while (playerMissCount < MAX_MISSES && opponentMissCount < MAX_MISSES) {
             try {
@@ -43,7 +42,7 @@ public class GladiatorBattle {
                     opponentMissCount++;
                     System.out.println("Miss! " + opponentName + " attacks!");
                 } else {
-                    System.out.println("Block! " + opponentName + " tried to attack, but you blocked it!");
+                    System.out.println("Block! " + opponentName + "  attacking,choose an action!");
                 }
 
                 int opponentAttack = random.nextInt(BLOCKS);
