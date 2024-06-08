@@ -2,6 +2,8 @@ package com.pingwit.part_17.homework.part_2;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
@@ -45,7 +47,7 @@ public class TimeApplication {
         LocalDateTime dateTime = LocalDateTime.now();
 
         DateTimeFormatter unusualFormatter = DateTimeFormatter.ofPattern("EEEE, dd MMMM yyyy HH:mm:ss");
-        System.out.println("Current DateTime in Ukraine:");
+        System.out.println("Current DateTime :");
         System.out.println(dateTime.format(unusualFormatter));
     }
 }
