@@ -21,8 +21,8 @@ public class WorldTime {
             System.out.println("Local date and time in " + zoneIdString + ": " + zonedDateTime.format(formatter));
         } catch (Exception e) {
             System.out.println("Invalid time zone ,please try again.For example : Europe/Warsaw");
-
+// лишняя строка, удали
         }
-
+// лишняя строка, удали
     }
 }

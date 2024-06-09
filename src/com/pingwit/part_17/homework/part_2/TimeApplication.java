@@ -6,7 +6,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-
+// удали неиспользуемые импорты (серым подсвечены)
 public class TimeApplication {
     public static void main(String[] args) {
         String[] dateStrings = {"2023-17-01", "23-2022-01", "15-07-2024"};
