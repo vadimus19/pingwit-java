@@ -1,12 +1,14 @@
-package com.pingwit.part_17.homework;
+package com.pingwit.part_17.homework.part_1.part_3;
+
+import java.time.LocalDate;
 
 public class Person {
     private String firstname;
     private String lastname;
     private String passportNumber;
-    private String birthDate;
+    private LocalDate birthDate;
 
-    public Person(String firstname, String lastname, String passportNumber, String birthDate) {
+    public Person(String firstname, String lastname, String passportNumber, LocalDate birthDate) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.passportNumber = passportNumber;
