@@ -11,10 +11,10 @@ public class Bob {
 
         try (FileOutputStream fos = new FileOutputStream(imagePath, true)) {
             fos.write(secretMessage.getBytes());
-
+// лишняя строка, удали
         } catch (IOException e) {
             throw new RuntimeException(e);
-
+// лишняя строка, удали
         }
 
         try (RandomAccessFile raf = new RandomAccessFile(imagePath, "r")) {

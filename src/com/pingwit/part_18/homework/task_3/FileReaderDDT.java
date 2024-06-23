@@ -1,10 +1,10 @@
 package com.pingwit.part_18.homework.task_3;
 
-
+// лишняя строка, удали
 import java.io.FileReader;
 import java.io.IOException;
 
-public class FileReaderDDT {
+public class FileReaderDDT { // а что такое DDT?
     public static void main(String[] args) {
         try (FileReader fr = new FileReader("src/com/pingwit/part_18/homework/task_2/outputTuc.txt")) {
             int data;
