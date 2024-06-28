@@ -13,7 +13,6 @@ public class WriteMotorcycleToFile {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("src/com/pingwit/part_19/homework/task_1/moto.txt"))) {
             Motorcycle deserializedMotorcycle = (Motorcycle) ois.readObject();
             System.out.println(deserializedMotorcycle);
