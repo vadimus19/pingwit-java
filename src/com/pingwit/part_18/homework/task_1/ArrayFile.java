@@ -14,10 +14,10 @@ public class ArrayFile {
                 fos.write(Integer.toString(number).getBytes());
                 fos.write("\n".getBytes());
             }
-
+// лишняя строка, удали
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
+// лишняя строка, удали
     }
 }
