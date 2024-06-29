@@ -12,7 +12,7 @@ public class ReadMotorcycleFromFile {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("src/com/pingwit/part_19/homework/task_1/moto.txt"))) {
             Motorcycle deserializedMotorcycle = (Motorcycle) ois.readObject();
             System.out.println(deserializedMotorcycle);
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) { // опционально: я бы тебе предложил объединить 3 catch блока в 1 и внутри оставить throw new RuntimeException(e);
             throw new RuntimeException(e);
         } catch (IOException e) {
             e.printStackTrace();
