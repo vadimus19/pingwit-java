@@ -1,5 +1,6 @@
 package com.pingwit.part_20.homework.task_1;
 
+// отформатируй код
 public class Car {
     private String model;
     private String color;

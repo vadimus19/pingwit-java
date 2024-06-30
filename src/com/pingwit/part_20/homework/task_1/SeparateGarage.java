@@ -1,5 +1,6 @@
 package com.pingwit.part_20.homework.task_1;
 
+//+
 public class SeparateGarage {
     public static void main(String[] args) {
         Garage<BMW> bmwGarage = new Garage<>();
