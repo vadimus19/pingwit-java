@@ -3,6 +3,7 @@ package com.pingwit.part_21.homework.task_6;
 import java.util.ArrayList;
 import java.util.List;
 
+// Аналогично Task 5, но удаляем по 0 индексу -> arrayList.remove(0)
 public class ArrayListLinkedListDeleteStart {
     public static void main(String[] args) {
         List<Integer> arrayList = new ArrayList<>();
@@ -13,7 +14,7 @@ public class ArrayListLinkedListDeleteStart {
             arrayList.remove(arrayList.size() );
             long finishRemoveArrayList = System.currentTimeMillis();
             System.out.println(finishRemoveArrayList - startRemoveArrayList);
-
+// лишняя строка, удали
         }
     }
 }

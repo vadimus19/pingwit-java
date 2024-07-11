@@ -3,6 +3,7 @@ package com.pingwit.part_21.homework.task_1;
 import java.util.ArrayList;
 import java.util.List;
 
+// перечитай, пожалуйста, условие задачи. Пригодится цикл и итератор
 public class ArrayListRetainExample {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
