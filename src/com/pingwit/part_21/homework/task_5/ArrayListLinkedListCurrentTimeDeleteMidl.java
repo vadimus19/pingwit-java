@@ -18,7 +18,6 @@ public class ArrayListLinkedListCurrentTimeDeleteMidl {
 
         while (arrayList.size() > 0) {
             arrayList.remove(arrayList.size() / 2);
-// лишняя строка, удали
         }
         long finishRemoveArrayList = System.currentTimeMillis();
         System.out.println("Array list remove: " + (finishRemoveArrayList - startRemoveArrayList));
@@ -37,10 +36,7 @@ public class ArrayListLinkedListCurrentTimeDeleteMidl {
 
         System.out.println(arrayList.size());
         System.out.println(linkedList.size());
-// лишняя строка, удали
     }
-// лишняя строка, удали
-// лишняя строка, удали
 }
 
 

@@ -11,10 +11,9 @@ public class ArrayListLinkedListDeleteStart {
         for (int i = 0; i < count; i++) {
 
             long startRemoveArrayList = System.currentTimeMillis();
-            arrayList.remove(arrayList.size() );
+            arrayList.remove(arrayList.size());
             long finishRemoveArrayList = System.currentTimeMillis();
             System.out.println(finishRemoveArrayList - startRemoveArrayList);
-// лишняя строка, удали
         }
     }
 }

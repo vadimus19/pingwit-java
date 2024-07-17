@@ -21,7 +21,6 @@ public class NamesList {
         } else {
             System.out.println("Sorry, " + name + " , your name is not on the list.");
         }
-// лишняя строка, удали
     }
 }
 
