@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-// Есть подозрение, что это не Task 4
+
 public class ArrayListLinkedListCurrentTimeDeleteStart {
     public static void main(String[] args) {
         List<Integer> arrayList = new ArrayList<>();

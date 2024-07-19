@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class NamesList {
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>(); // ArrayList<String> list ->List<String> whiteList/acceptableNames
+        ArrayList<String> list = new ArrayList<>();
         list.add("Ivan Petrov");
         list.add("Georgi Mazonakis");
         list.add("Maria Mia");
