@@ -1,7 +1,10 @@
 package com.pingwit.part_22.homework.task_2;
 
 import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class WebSiteExample {
@@ -20,7 +23,7 @@ public class WebSiteExample {
         int month = scanner.nextInt();
 
         Map<String, Long> siteVisitsCount = wsi.stream()
-                .filter(visit -> visit.getLocalDate().getMonthValue() == month)
+                .filter(visit -> visit.getLocalDate().getMonthValue() == month) // FYI: лучше поменять местами visit.getLocalDate().getMonthValue() и month, чтобы избежать NullPointerException. В данном случае у тебя примитивы и NPE не будет, но привычка останется
                 .collect(Collectors.groupingBy(WebsiteInformation::getWebSiteName, Collectors.counting()));
 
         System.out.println("Visit per month " + month + ":");
@@ -28,7 +31,14 @@ public class WebSiteExample {
             String site = entry.getKey();
             Long count = entry.getValue();
             System.out.println("Site: " + site + ", amount: " + count);
-
+// лишняя строка, удали
         }
+       /*
+       Альтернативный вариант кода выше.
+       site, count - это просто названия для переменных ключа и вэлью, можно изменить как больше нравится
+        siteVisitsCount.forEach((site, count) -> {
+            System.out.println("Site: " + site + ", amount: " + count);
+        });
+        */
     }
 }

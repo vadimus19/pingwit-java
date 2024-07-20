@@ -1,6 +1,6 @@
 package com.pingwit.part_22.homework.task_1;
 
- class ShopsList {
+ class ShopsList { // ShopsList -> у тебя этот класс отвечает за 1 магазин, слово List из названия стоит убрать
      private String name;
      private String id;
 
@@ -10,7 +10,7 @@ package com.pingwit.part_22.homework.task_1;
      }
 
      public String getName() {
-
+// лишняя строка, удали
          return name;
      }
 

@@ -2,6 +2,7 @@ package com.pingwit.part_22.homework.task_2;
 
 import java.time.LocalDate;
 
+// отформатируй код
 class WebsiteInformation {
   private String userName;
   private String webSiteName;
