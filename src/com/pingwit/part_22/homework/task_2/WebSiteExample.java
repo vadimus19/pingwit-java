@@ -31,8 +31,7 @@ public class WebSiteExample {
             String site = entry.getKey();
             Long count = entry.getValue();
             System.out.println("Site: " + site + ", amount: " + count);
-// лишняя строка, удали
-        }
+}
        /*
        Альтернативный вариант кода выше.
        site, count - это просто названия для переменных ключа и вэлью, можно изменить как больше нравится
