@@ -15,7 +15,7 @@ public class StudentSorted {
                 System.out.println(student);
             }
 //            решил попробовать форич и стрим
-            
+
             System.out.println("======");
             {
                 studentLists.stream()
