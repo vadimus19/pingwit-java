@@ -24,6 +24,7 @@ public class PatternNameExample {
         names.add("Egorka");
         names.add("Vadimus");
         names.add("Gosha");
+        names.add("Wawa");
 
         Pattern pattern = Pattern.compile("^[H-W].*");
 
