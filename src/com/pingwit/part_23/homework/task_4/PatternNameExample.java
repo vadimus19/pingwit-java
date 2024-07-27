@@ -1,10 +1,10 @@
-package com.pingwit.part_23.homework.part_1;
+package com.pingwit.part_23.homework.task_4;
 
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.regex.Pattern;
 
-public class PatternNNameExample {
+public class PatternNameExample {
     public static void main(String[] args) {
         Set<String> names = new TreeSet<>();
 
