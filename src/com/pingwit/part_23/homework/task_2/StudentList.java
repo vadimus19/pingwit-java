@@ -1,6 +1,6 @@
 package com.pingwit.part_23.homework.task_2;
 
-record StudentList(String name, String surname, Integer course) implements Comparable<StudentList> {
+record StudentList(String name, String surname, Integer course) implements Comparable<StudentList> { // StudentList -> Student
 
     @Override
     public int compareTo(StudentList studentList) {
@@ -13,7 +13,7 @@ record StudentList(String name, String surname, Integer course) implements Compa
         int nameResult = this.name.compareTo(studentList.name);
         if (nameResult != 0) {
             return nameResult;
-        }
+        } // у тебя в 13 строке стоит абзац после if, это ок, но тогда после if выше тоже ставь абзац, чтобы стиль одинаковый был
         int surnameResult = this.surname.compareTo(studentList.surname);
         if (surnameResult != 0) {
             return surnameResult;

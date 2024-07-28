@@ -15,7 +15,7 @@ public record Fruit(String name, String type, double weight) implements Comparab
 
         }
         return Double.compare(this.weight, fruits.weight);
-
+// лишняя строка, удали
     }
 }
 

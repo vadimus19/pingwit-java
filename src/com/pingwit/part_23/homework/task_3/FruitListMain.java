@@ -31,6 +31,9 @@ public class FruitListMain {
             System.out.println(k);
             System.out.println(v);
         });
+        /* ты сейчас сначала группируешь данные, затем считаешь вес для каждого из типа фруктов, получается лишний пробег по всей коллекции.
+        Давай заменим Map<String, List<Fruit>> fruitsByType -> Map<String, BigDecimal> fruitsByType и сразу в первом цикле будем считать весь для каждого из типов фруктов
+         */
         fruitsByType.forEach((type, fruitList) -> {
             fruitList.sort(Comparator.comparing(Fruit::name));
             double totalWeight = fruitList.stream().mapToDouble(Fruit::weight).sum();
