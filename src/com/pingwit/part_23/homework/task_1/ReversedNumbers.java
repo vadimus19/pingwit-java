@@ -20,6 +20,5 @@ public class ReversedNumbers {
         revers.addAll(num);
 
         System.out.println("After revers: " + revers);
-// лишняя строка, удали
     }
 }

@@ -17,10 +17,10 @@ public class StudentSorted {
 //            решил попробовать форич и стрим
 
             System.out.println("======");
-            { // эта фигурная скобка не нужна
-                studentLists.stream() // чтобы вызвать foreach stream не обязателен -> studentLists.forEach(System.out::println);
-                        .forEach(System.out::println);
-            }
+            // эта фигурная скобка не нужна
+            studentLists.forEach(System.out::println);
+
         }
     }
 }
+
