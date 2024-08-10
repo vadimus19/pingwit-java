@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Order {
+public class Order { // Order - это класс с заказом. Методы, которые добавляют что-то в заказ или считают скидки, лучше вынести в отдельный класс и назвать его OrderService
     private final Map<Flower, Integer> flowers = new HashMap<>();
     private static final double DISCOUNT_RATE = 0.10;
 
@@ -20,13 +20,15 @@ public class Order {
         return totalCost;
     }
 
-    public double applyDiscountIfApplicable(LocalDate today, LocalDate birthdate) {
-        boolean applyDiscount = today.getMonthValue() == 3 && today.getDayOfMonth() == 8;
-        if (birthdate != null) {
+    public double applyDiscountIfApplicable(LocalDate today, LocalDate birthdate) { // этот метод должен уехать в новый класс OrderService
+        boolean applyDiscount = today.getMonthValue() == 3 && today.getDayOfMonth() == 8; // 3 в константу, 8 в константу, applyDiscount -> specialDiscount
+//        boolean birthdateDiscount = birthdate != null && birthdate.getMonth() == today.getMonth() && birthdate.getDayOfMonth() == today.getDayOfMonth();
+
+        if (birthdate != null) { // этот if вместе с содержимым удаляем
             applyDiscount = applyDiscount || (birthdate.getMonth() == today.getMonth() && birthdate.getDayOfMonth() == today.getDayOfMonth());
         }
         double totalCost = calculateTotalCost();
-        if (applyDiscount) {
+        if (applyDiscount) { // specialDiscount || birthdateDiscount
             totalCost -= totalCost * DISCOUNT_RATE;
         }
         return totalCost;

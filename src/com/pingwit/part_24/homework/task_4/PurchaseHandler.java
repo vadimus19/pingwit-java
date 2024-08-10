@@ -4,15 +4,15 @@ import java.time.LocalDate;
 import java.util.Map;
 import java.util.Scanner;
 
-public class PurchaseHandler {
-    private static final Scanner scanner = new Scanner(System.in);
+public class PurchaseHandler { // название класса очень хорошее, как альтернатива PurchaseHandler -> PurchaseService
+    private static final Scanner scanner = new Scanner(System.in); // scanner -> SCANNER
     private final Map<Integer, Flower> flowers;
 
     public PurchaseHandler(Map<Integer, Flower> flowers) {
         this.flowers = flowers;
     }
 
-    public void purchaseFlowers() {
+    public void purchaseFlowers() { // public void purchaseFlowers() -> void -> Order, а вот уже печатать Order на экран лучше в методе main()
         Order order = new Order();
         while (true) {
             System.out.println("Enter the number of the flower you want to purchase or 'done' to finish:");
@@ -22,17 +22,17 @@ public class PurchaseHandler {
             }
 
             try {
-                int flowerNumber = Integer.parseInt(input);
+                int flowerNumber = Integer.parseInt(input); // flowerNumber -> flowerId, number ассоциируется с количеством, а тебе нужен ИД, если я верно понял
                 if (!flowers.containsKey(flowerNumber)) {
-                    System.out.println("Invalid flower number, please try again.");
-                    continue;
+                    System.out.println("Invalid flower number, please try again."); // Invalid flower number -> Invalid flower id
+                    continue; // лучше не использовать этот оператор
                 }
 
                 System.out.println("Enter the quantity:");
                 int quantity = Integer.parseInt(scanner.nextLine());
                 if (quantity <= 0) {
                     System.out.println("Quantity must be positive.");
-                    continue;
+                    continue;// лучше не использовать этот оператор
                 }
 
                 order.addFlower(flowers.get(flowerNumber), quantity);

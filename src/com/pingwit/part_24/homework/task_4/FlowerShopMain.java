@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class FlowerShopMain {
 
-    private static final Scanner scanner = new Scanner(System.in);
-    private static final Map<Integer, Flower> flowers = new HashMap<>();
+    private static final Scanner scanner = new Scanner(System.in); // scanner -> SCANNER
+    private static final Map<Integer, Flower> flowers = new HashMap<>(); // flowers -> FLOWERS
 
     static {
         flowers.put(1, new Flower("Rose", 50));
@@ -18,14 +18,14 @@ public class FlowerShopMain {
     public static void main(String[] args) {
         PurchaseHandler purchaseHandler = new PurchaseHandler(flowers);
 
-        while (true) {
+        while (true) { // можно вместо true использовать переменную boolean purchaseReady и просто поменять ей статус, когда заказ прошел успешно и выйти из цикла
             System.out.println("Welcome to the Flower Shop! What would you like to do?");
             System.out.println("1. View available flowers");
             System.out.println("2. Purchase flowers");
             System.out.println("3. Exit");
 
             String choice = scanner.nextLine();
-            switch (choice) {
+            switch (choice) { // не ошибка, но лучше использовать новый switch как в MultiplyExample
                 case "1":
                     viewFlowers();
                     break;

@@ -26,6 +26,12 @@ public class UserFilterExample {
         filterUsers(users, filters);
 
         System.out.println("After filtering: " + users);
+        /*
+        Решение задачи:
+        users.removeIf(user -> user.getName().startsWith("A") || user.getName().startsWith("P") || ...)
+
+        функциональные интерфейсы придуманы чтобы упростить код и позволить сложные операции решать быстро и в 1 строку :)
+         */
     }
 
     public static void filterUsers(List<User> users, List<UserPredicate> predicates) {
