@@ -15,27 +15,10 @@ public class UserFilterExample {
 
         System.out.println("Before filtering: " + users);
 
-        CommonFilter commonFilter = new CommonFilter();
-
-        List<UserPredicate> filters = List.of(
-                commonFilter::nameStartsWithA,
-                commonFilter::nameStartsWithP,
-                commonFilter::nameStartsWithE
-        );
-
-        filterUsers(users, filters);
+        users.removeIf(user -> user.getName().startsWith("A") || user.getName().startsWith("P") || user.getName().startsWith("E"));
 
         System.out.println("After filtering: " + users);
-        /*
-        Решение задачи:
-        users.removeIf(user -> user.getName().startsWith("A") || user.getName().startsWith("P") || ...)
-
-        функциональные интерфейсы придуманы чтобы упростить код и позволить сложные операции решать быстро и в 1 строку :)
-         */
-    }
-
-    public static void filterUsers(List<User> users, List<UserPredicate> predicates) {
-        users.removeIf(user -> predicates.stream().anyMatch(predicate -> predicate.test(user)));
     }
 }
+
 

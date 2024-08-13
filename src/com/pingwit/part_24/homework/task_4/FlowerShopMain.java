@@ -6,26 +6,27 @@ import java.util.Scanner;
 
 public class FlowerShopMain {
 
-    private static final Scanner scanner = new Scanner(System.in); // scanner -> SCANNER
-    private static final Map<Integer, Flower> flowers = new HashMap<>(); // flowers -> FLOWERS
+    private static final Scanner SCANNER = new Scanner(System.in);
+    private static final Map<Integer, Flower> FLOWERS = new HashMap<>();
 
     static {
-        flowers.put(1, new Flower("Rose", 50));
-        flowers.put(2, new Flower("Romashka;)", 30));
-        flowers.put(3, new Flower("Magnolia", 70));
+        FLOWERS.put(1, new Flower("Rose", 50));
+        FLOWERS.put(2, new Flower("Romashka;)", 30));
+        FLOWERS.put(3, new Flower("Magnolia", 70));
     }
 
     public static void main(String[] args) {
-        PurchaseHandler purchaseHandler = new PurchaseHandler(flowers);
+        PurchaseService purchaseHandler = new PurchaseService(FLOWERS);
+        boolean purchaseReady = false;
 
-        while (true) { // можно вместо true использовать переменную boolean purchaseReady и просто поменять ей статус, когда заказ прошел успешно и выйти из цикла
+        while (!purchaseReady) {
             System.out.println("Welcome to the Flower Shop! What would you like to do?");
             System.out.println("1. View available flowers");
             System.out.println("2. Purchase flowers");
             System.out.println("3. Exit");
 
-            String choice = scanner.nextLine();
-            switch (choice) { // не ошибка, но лучше использовать новый switch как в MultiplyExample
+            String choice = SCANNER.nextLine();
+            switch (choice) {
                 case "1":
                     viewFlowers();
                     break;
@@ -43,7 +44,7 @@ public class FlowerShopMain {
 
     private static void viewFlowers() {
         System.out.println("Available flowers:");
-        for (Map.Entry<Integer, Flower> entry : flowers.entrySet()) {
+        for (Map.Entry<Integer, Flower> entry : FLOWERS.entrySet()) {
             System.out.println(entry.getKey() + ". " + entry.getValue());
         }
     }
