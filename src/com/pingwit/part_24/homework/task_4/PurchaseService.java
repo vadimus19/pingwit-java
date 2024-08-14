@@ -42,7 +42,7 @@ public class PurchaseService {
         }
 
         System.out.println("Enter delivery date (YYYY-MM-DD):");
-        LocalDate deliveryDate = DateUtils.parseDate(SCANNER.nextLine());
+        LocalDate deliveryDate = DateUtils.parseDate(SCANNER.nextLine()); // эта переменная не используется
 
         System.out.println("Enter your birthdate (YYYY-MM-DD) or 'skip' to skip:");
         String birthdateInput = SCANNER.nextLine();

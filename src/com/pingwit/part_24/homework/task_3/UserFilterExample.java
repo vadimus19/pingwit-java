@@ -2,7 +2,7 @@ package com.pingwit.part_24.homework.task_3;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//+
 public class UserFilterExample {
     public static void main(String[] args) {
         List<User> users = new ArrayList<>();

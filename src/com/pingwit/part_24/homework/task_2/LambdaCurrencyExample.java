@@ -5,7 +5,7 @@ public class LambdaCurrencyExample {
         CurrencyConverter currencyConverter = amount -> {
             int lastDigit = amount % 10;
             int lastTwoDigits = amount % 100;
-            String suffix;
+            String suffix; // скорее postfix или currency
 
             if (lastTwoDigits >= 11 && lastTwoDigits <= 14) {
                 suffix = "рублей";

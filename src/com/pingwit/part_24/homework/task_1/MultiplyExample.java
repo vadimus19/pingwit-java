@@ -1,6 +1,6 @@
 package com.pingwit.part_24.homework.task_1;
 
-
+// лишняя строка, удали
 import java.util.function.BinaryOperator;
 
 public class MultiplyExample {
