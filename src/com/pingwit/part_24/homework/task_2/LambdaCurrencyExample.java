@@ -5,19 +5,19 @@ public class LambdaCurrencyExample {
         CurrencyConverter currencyConverter = amount -> {
             int lastDigit = amount % 10;
             int lastTwoDigits = amount % 100;
-            String suffix; // скорее postfix или currency
+            String postfix; // скорее postfix или currency
 
             if (lastTwoDigits >= 11 && lastTwoDigits <= 14) {
-                suffix = "рублей";
+                postfix = "рублей";
             } else if (lastDigit == 1) {
-                suffix = "рубль";
+                postfix = "рубль";
             } else if (lastDigit >= 2 && lastDigit <= 4) {
-                suffix = "рубля";
+                postfix = "рубля";
             } else {
-                suffix = "рублей";
+                postfix = "рублей";
             }
 
-            return amount + " " + suffix;
+            return amount + " " + postfix;
         };
 
         System.out.println("=== After the lambda ===");
