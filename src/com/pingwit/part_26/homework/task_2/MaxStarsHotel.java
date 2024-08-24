@@ -16,8 +16,14 @@ public class MaxStarsHotel {
                 new Hotel("Roza", 5)
         );
         Optional<Hotel> bestHotel = hotels.stream()
-                .max(Comparator.comparing(Hotel::stars));
+                .max(Comparator.comparing(Hotel::stars)); // Сам делал или гуглил?
         bestHotel.ifPresent(System.out::println);
 
+        /*
+        можно после max() вызвать ifPresent()
+        hotels.stream()
+                .max(Comparator.comparing(Hotel::stars))
+                .ifPresent(System.out::println);
+        */
     }
 }

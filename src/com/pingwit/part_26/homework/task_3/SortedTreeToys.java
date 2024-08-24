@@ -17,7 +17,7 @@ public class SortedTreeToys {
                 new TreeToys("Cat", true)
         );
 
-        List<TreeToys> sortToys = treeToys.stream()
+        List<TreeToys> sortToys = treeToys.stream() // сортировать не обязательно, это дополнительное действие, которое в реальных программах будет нагружать приложение
                 .sorted(Comparator.comparing(TreeToys::fixture))
                 .toList();
         sortToys.forEach(System.out::println);
@@ -31,7 +31,7 @@ public class SortedTreeToys {
 
         List<TreeToys> toysWithoutFixture = sortedToys.get(false);
         System.out.println("Tree toys without fixture : " + toysWithoutFixture);
-
+        // если я верно понимаю это второй вариант решения задачи. Выбери какой тебе больше нравится и оставь 1
         List<TreeToys> toysWithFixture1 = new ArrayList<>();
         List<TreeToys> toysWithoutFixture2 = new ArrayList<>();
         for (TreeToys toy : treeToys) {

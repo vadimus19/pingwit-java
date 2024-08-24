@@ -1,6 +1,6 @@
 package com.pingwit.part_26.homework.task_4;
 
-import java.util.ArrayList;
+import java.util.ArrayList; // лишний импорт
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -14,11 +14,11 @@ public class StudentAverage {
                 new Student("Irina", "Bukova", 8.5),
                 new Student("Gora", "Kozlov", 5.0)
         );
-        Map<String, Double> groupedStudent = students.stream()
+        Map<String, Double> groupedStudent = students.stream() // очень хорошо
                 .collect(Collectors.groupingBy(
                         Student::name,
                         Collectors.averagingDouble(Student::average)
-
+// лишняя строка, удали
                 ));
         System.out.println(groupedStudent);
     }
