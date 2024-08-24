@@ -29,7 +29,7 @@ public class TravelersVisitsCountry {
         )));
         Path filePath = Paths.get("src/com/pingwit/part_25/homework/task_6.travelers_unique_cities.txt");
         try {
-            Files.write(filePath, travelers.stream()// вынеси получение списка городов в отдельную переменную + тебе не нужно имя самого путешественника, на выходе должен быть только список уникальных городов
+            Files.write(filePath, travelers.stream()
                     .map(traveler -> traveler.name() + ": " +
                             traveler.countries().stream()
                                     .flatMap(country -> country.cities().stream())
@@ -41,7 +41,7 @@ public class TravelersVisitsCountry {
 
             System.out.println("Unique cities add to: " + filePath.toAbsolutePath());
         } catch (Exception e) {
-// пустовато
+
 
         }
     }

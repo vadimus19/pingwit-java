@@ -15,10 +15,9 @@ public class CarsSortedByProducer {
 
         Map<String, List<Cars>> carsByProducer = cars.stream()
                 .collect(Collectors.groupingBy(Cars::producer));
-        carsByProducer.forEach((producer, carList) -> { // здесь фигурные скобки не нужны и 20 строка лишняя
-            System.out.println("Producer: " + producer);
-
-        });
+        carsByProducer.forEach((producer, carList) ->
+            System.out.println("Producer: " + producer)
+        );
         /*
         carsByProducer.forEach((producer, carList) -> System.out.println("Producer: " + producer));
         */

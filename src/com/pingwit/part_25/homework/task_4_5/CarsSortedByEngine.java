@@ -17,7 +17,6 @@ public class CarsSortedByEngine { // вынеси этот класс в отд�
                 .collect(Collectors.groupingBy(Cars::engineType));
         carsByEngine.forEach((engine, carList) -> { // здесь фигурные скобки не нужны и 20 строка лишняя
             System.out.println("Engine type: " + engine);
-
         });
         /*
         carsByProducer.forEach((producer, carList) -> System.out.println("Producer: " + producer));

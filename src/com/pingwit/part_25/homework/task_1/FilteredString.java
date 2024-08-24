@@ -8,10 +8,9 @@ public class FilteredString {
     public static void main(String[] args) {
         List<String> strings = Arrays.asList("java", "cat", "ratatuy", "kusal", "cucumber", "sun"); // Arrays.asList -> List.of -> не принципиально, но более современный подход
 
-        List<String> shortString = strings.stream(). // перенеси точку перед filter
-                filter(shor -> shor.length() >= 5). // перенеси точку перед collect
-                collect(Collectors.toList());
+        List<String> shortString = strings.stream() // перенеси точку перед filter
+                .filter(shor -> shor.length() >= 5) // перенеси точку перед collect
+                .collect(Collectors.toList());
         System.out.println(shortString);
-// лишняя строка, удали
     }
 }
